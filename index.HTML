@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Secret Admirer Nearby 🔥 | Connect Instantly</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --purple-dark: #6A0DAD;
+      --purple-medium: #8A2BE2;
+      --purple-light: #9370DB;
+      --pink-hot: #FF0080;
+      --pink-medium: #E75480;
+      --red-passion: #FF0033;
+      --red-dark: #CC0000;
+      --text-light: #fff;
+      --shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--purple-dark), var(--purple-medium), var(--pink-hot), var(--red-passion));
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      color: var(--text-light);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(20px);
+      border-radius: 25px;
+      padding: 30px 25px;
+      width: 100%;
+      box-shadow: var(--shadow);
+      animation: float 4s ease-in-out infinite;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(to right, var(--purple-medium), var(--pink-hot), var(--red-passion));
+      z-index: 1;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(to right, #FF0080, #FF0033, #8A2BE2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    }
+
+    .logo-flame {
+      font-size: 2.5rem;
+      animation: flame 1.5s ease-in-out infinite alternate;
+      display: inline-block;
+      filter: drop-shadow(0 0 10px rgba(255, 75, 75, 0.8));
+    }
+
+    @keyframes flame {
+      0% {
+        transform: scale(1) rotate(0deg);
+        text-shadow: 0 0 5px #FF4B4B, 0 0 10px #FF4B4B;
+      }
+      50% {
+        transform: scale(1.2) rotate(-3deg);
+        text-shadow: 0 0 15px #FF4B4B, 0 0 20px #FF4B4B, 0 0 25px #FF4B4B;
+      }
+      100% {
+        transform: scale(1.1) rotate(3deg);
+        text-shadow: 0 0 10px #FF4B4B, 0 0 15px #FF4B4B;
+      }
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 15px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      font-weight: 500;
+    }
+
+    .banner {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.5s ease;
+      border: 3px solid rgba(255, 255, 255, 0.25);
+      filter: brightness(1.1) contrast(1.1);
+    }
+
+    .banner:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 800;
+      line-height: 1.3;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .city-name {
+      color: white;
+      font-weight: 800;
+      display: inline-block;
+      margin: 5px 0;
+      font-size: 2.2rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      animation: cityPulse 3s infinite;
+    }
+
+    @keyframes cityPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .urgent-notice {
+      background: rgba(255, 0, 51, 0.35);
+      border: 1px solid rgba(255, 0, 51, 0.6);
+      border-radius: 18px;
+      padding: 15px;
+      margin: 20px 0;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      animation: urgentPulse 2s infinite;
+      font-size: 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes urgentPulse {
+      0%, 100% { 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transform: scale(1);
+      }
+      50% { 
+        box-shadow: 0 5px 25px rgba(255, 0, 51, 0.6);
+        transform: scale(1.02);
+      }
+    }
+
+    .urgent-notice::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      animation: urgentShine 3s infinite;
+    }
+
+    @keyframes urgentShine {
+      0% { left: -100%; }
+      50% { left: 100%; }
+      100% { left: 100%; }
+    }
+
+    .features-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 0;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 20px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .feature {
+      flex: 1;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover .feature-icon {
+      transform: scale(1.2);
+    }
+
+    .feature-text {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .button-container {
+      margin: 30px 0 25px;
+      position: relative;
+    }
+
+    .button {
+      background: linear-gradient(to right, var(--pink-hot), var(--red-passion));
+      color: white;
+      font-weight: 800;
+      border: none;
+      border-radius: 50px;
+      padding: 20px 50px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 350px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 0.5px;
+      animation: buttonPulse 2s infinite;
+    }
+
+    @keyframes buttonPulse {
+      0%, 100% { 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        transform: scale(1);
+      }
+      50% { 
+        box-shadow: 0 15px 35px rgba(255, 0, 51, 0.6);
+        transform: scale(1.05);
+      }
+    }
+
+    .button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: 0.5s;
+    }
+
+    .button:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      background: linear-gradient(to right, var(--red-passion), var(--pink-hot));
+    }
+
+    .button:hover::before {
+      left: 100%;
+    }
+
+    .button:active {
+      transform: translateY(-4px) scale(1.02);
+    }
+
+    .benefits {
+      text-align: left;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefits::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 6px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--purple-medium), var(--pink-hot));
+    }
+
+    .benefits-title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .benefit-icon {
+      margin-right: 12px;
+      font-size: 1.2rem;
+      color: var(--pink-hot);
+      flex-shrink: 0;
+      text-shadow: 0 0 5px rgba(255, 0, 128, 0.5);
+    }
+
+    .user-count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 15px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .users-avatars {
+      display: flex;
+    }
+
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid var(--text-light);
+      margin-left: -10px;
+      background: linear-gradient(to right, var(--purple-medium), var(--pink-hot));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.1);
+      z-index: 10;
+    }
+
+    .avatar:first-child {
+      margin-left: 0;
+    }
+
+    .location-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 15px 0;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px;
+      border-radius: 15px;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .spinner {
+      width: 24px;
+      height: 24px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--pink-hot);
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      max-width: 500px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: opacity 0.3s;
+    }
+
+    .footer-links a:hover {
+      opacity: 0.7;
+    }
+
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      opacity: 0;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    .heart:after {
+      left: 10px;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    .pulse-dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--red-passion);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.7);
+      animation: pulse-dot 2s infinite;
+      z-index: 3;
+    }
+
+    @keyframes pulse-dot {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 20px rgba(255, 0, 51, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 0, 51, 0);
+      }
+    }
+
+    /* تحسينات للجوال مع الحفاظ على الميزات في سطر واحد */
+    @media (max-width: 480px) {
+      .card {
+        padding: 25px 20px;
+      }
+      
+      h1 {
+        font-size: 1.7rem;
+      }
+      
+      .city-name {
+        font-size: 1.8rem;
+      }
+      
+      .features-container {
+        padding: 15px 10px;
+      }
+      
+      .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 8px;
+      }
+      
+      .feature-text {
+        font-size: 0.8rem;
+      }
+      
+      .button {
+        padding: 18px 40px;
+        font-size: 1.3rem;
+        max-width: 100%;
+      }
+      
+      .urgent-notice {
+        padding: 12px;
+        font-size: 0.9rem;
+      }
+      
+      .logo {
+        font-size: 1.9rem;
+      }
+      
+      .logo-flame {
+        font-size: 2.2rem;
+      }
+    }
+
+    /* تأكد من بقاء الميزات في سطر واحد على الشاشات الصغيرة جداً */
+    @media (max-width: 360px) {
+      .feature-text {
+        font-size: 0.75rem;
+      }
+      
+      .feature-icon {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts" id="hearts-container"></div>
+  <div class="pulse-dot" style="top: 20%; left: 10%;"></div>
+  <div class="pulse-dot" style="top: 80%; left: 85%;"></div>
+  <div class="pulse-dot" style="top: 40%; left: 90%;"></div>
+  
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="logo">PassionConnect <span class="logo-flame">🔥</span></div>
+        <div class="tagline">Where desires meet and sparks fly</div>
+      </div>
+      
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Attractive person looking at camera" class="banner" />
+      
+      <h1>Find Your Secret Admirer in <span id="city" class="city-name">YOUR AREA</span> 🔥</h1>
+      
+      <div class="urgent-notice">
+        ⚡ 5 new people in your area joined in the last hour! Don't miss out!
+      </div>
+      
+      <div id="location-loading" class="location-loading">
+        <div class="spinner"></div>
+        <span>Scanning for hot singles near you...</span>
+      </div>
+      
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-icon">🔐</div>
+          <div class="feature-text">Verified Profiles</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">✨</div>
+          <div class="feature-text">Smart Matching</div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💌</div>
+          <div class="feature-text">Instant Chat</div>
+        </div>
+      </div>
+      
+      <div class="button-container">
+        <button class="button" onclick="_KB()">
+          Find My Match Now! 🔥
+        </button>
+        <div style="margin-top: 15px; font-size: 0.85rem; opacity: 0.8;">
+          🔒 Your privacy is our priority - No credit card required
+        </div>
+      </div>
+      
+      <div class="benefits">
+        <div class="benefits-title">What Makes Us Different</div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🔥</span>
+          <span>Connect with adventurous adults in your area</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🔥</span>
+          <span>Private and discreet - your secrets are safe with us</span>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🔥</span>
+          <span>Advanced matching based on your desires</span>
+        </div>
+      </div>
+      
+      <div class="user-count">
+        <div class="users-avatars">
+          <div class="avatar">JD</div>
+          <div class="avatar">SM</div>
+          <div class="avatar">AK</div>
+          <div class="avatar">+5K</div>
+        </div>
+        <span>87,420+ active users online now</span>
+      </div>
+    </div>
+    
+    <footer>
+      <div>Adult Social Platform — For adventurous singles 18+ ❤️‍🔥</div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cityElement = document.getElementById('city');
+      const locationLoading = document.getElementById('location-loading');
+      const heartsContainer = document.getElementById('hearts-container');
+      const button = document.querySelector('.button');
+      
+      // Create floating hearts in the background
+      function createHearts() {
+        for (let i = 0; i < 25; i++) {
+          const heart = document.createElement('div');
+          heart.classList.add('heart');
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.style.animation = `floatHeart ${Math.random() * 15 + 10}s linear infinite`;
+          heart.style.animationDelay = Math.random() * 5 + 's';
+          heart.style.opacity = Math.random() * 0.7 + 0.1;
+          heart.style.transform = `scale(${Math.random() * 0.8 + 0.5})`;
+          heartsContainer.appendChild(heart);
+        }
+        
+        // Add the animation for hearts
+        const style = document.createElement('style');
+        style.textContent = `
+          @keyframes floatHeart {
+            0% {
+              transform: translateY(100vh) rotate(0deg);
+              opacity: 0;
+            }
+            10% {
+              opacity: 0.7;
+            }
+            90% {
+              opacity: 0.7;
+            }
+            100% {
+              transform: translateY(-100px) rotate(360deg);
+              opacity: 0;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+      
+      createHearts();
+      
+      // Add a simple animation when the page loads
+      const card = document.querySelector('.card');
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      
+      setTimeout(() => {
+        card.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 100);
+      
+      // Add click animation to button
+      button.addEventListener('click', function() {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = '';
+        }, 200);
+        
+        // Add confetti effect on click
+        createConfetti();
+      });
+      
+      // Create confetti effect
+      function createConfetti() {
+        const confettiContainer = document.createElement('div');
+        confettiContainer.style.position = 'fixed';
+        confettiContainer.style.top = '0';
+        confettiContainer.style.left = '0';
+        confettiContainer.style.width = '100%';
+        confettiContainer.style.height = '100%';
+        confettiContainer.style.pointerEvents = 'none';
+        confettiContainer.style.zIndex = '9999';
+        document.body.appendChild(confettiContainer);
+        
+        for (let i = 0; i < 50; i++) {
+          const confetti = document.createElement('div');
+          confetti.innerHTML = '❤️';
+          confetti.style.position = 'absolute';
+          confetti.style.fontSize = '20px';
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.animation = `confettiFall ${Math.random() * 2 + 1}s linear forwards`;
+          confettiContainer.appendChild(confetti);
+        }
+        
+        // Add confetti animation
+        const confettiStyle = document.createElement('style');
+        confettiStyle.textContent = `
+          @keyframes confettiFall {
+            0% {
+              transform: translateY(-100px) rotate(0deg);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(100vh) rotate(360deg);
+              opacity: 0;
+            }
+          }
+        `;
+        document.head.appendChild(confettiStyle);
+        
+        // Remove confetti after animation
+        setTimeout(() => {
+          document.body.removeChild(confettiContainer);
+        }, 2000);
+      }
+      
+      // Update online users count every few seconds
+      let userCount = 87420;
+      const userCountElement = document.querySelector('.user-count span');
+      
+      setInterval(() => {
+        const randomIncrement = Math.floor(Math.random() * 5) + 1;
+        userCount += randomIncrement;
+        userCountElement.textContent = `${userCount.toLocaleString()}+ active users online now`;
+      }, 5000);
+      
+      // Get user's location
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          // Success callback
+          function(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            
+            // Use OpenStreetMap Nominatim API for reverse geocoding
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
+              .then(response => response.json())
+              .then(data => {
+                const city = data.address.city || data.address.town || data.address.village || data.address.county || "YOUR AREA";
+                cityElement.textContent = city;
+                locationLoading.style.display = 'none';
+              })
+              .catch(error => {
+                console.error('Error getting location:', error);
+                cityElement.textContent = "YOUR AREA";
+                locationLoading.textContent = "Showing matches in your area";
+                setTimeout(() => {
+                  locationLoading.style.display = 'none';
+                }, 3000);
+              });
+          },
+          // Error callback
+          function(error) {
+            console.error('Geolocation error:', error);
+            cityElement.textContent = "YOUR AREA";
+            locationLoading.textContent = "Enable location to see matches nearby";
+            setTimeout(() => {
+              locationLoading.style.display = 'none';
+            }, 3000);
+          }
+        );
+      } else {
+        // Geolocation not supported
+        cityElement.textContent = "YOUR AREA";
+        locationLoading.textContent = "Showing matches in your area";
+        setTimeout(() => {
+          locationLoading.style.display = 'none';
+        }, 3000);
+      }
+    });
+  </script>
+</body>
+</html>
